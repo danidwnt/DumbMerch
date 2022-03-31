@@ -15,28 +15,31 @@ import EditProduct from './pages/EditProduct';
 import ComplainMassage from './pages/ComplainMassage';
 import DetailProduct from './pages/DetailProduct';
 import CheckOut from './pages/CheckOut';
+import PrivateRoute from './components/PrivatePages';
 
 
 
 function App() {
   return (
     <Router>
-            <Routes>
-                    <Route exact path='/' element={<Login/>}/>
-                    <Route exact path='/register' element={<Register/>}/>
-                    <Route exact path='/user-shop' element={<UserShop/>}/>
-                    <Route exact path='/profile' element={<Profile/>}/>
-                    <Route exact path='/Feedback' element={<Rating/>}/>
-                    <Route exact path='/complain' element={<ComplainUser/>}/> 
-                    <Route exact path='/product' element={<Product/>}/>
-                    <Route exact path='/category' element={<Category/>}/>
-                    <Route exact path='/edit-category' element={<EditCategory/>}/>
-                    <Route exact path='/edit-product' element={<EditProduct/>}/>
-                    <Route exact path='/complain-message' element={<ComplainMassage/>}/>
-                    <Route exact path='/detail-product' element={<DetailProduct/>}/>
-                    <Route exact path='/checkout' element={<CheckOut/>}/>             
-            </Routes>
-      </Router>
+      <Routes>
+        <Route exact path='/' element={<Login />} />
+        <Route exact path='/register' element={<Register />} />
+        <Route exact path='/' element={<PrivateRoute />}>
+          <Route exact path='/user-shop' element={<UserShop />} />
+          <Route exact path='/profile' element={<Profile />} />
+          <Route exact path='/Feedback' element={<Rating />} />
+          <Route exact path='/complain' element={<ComplainUser />} />
+          <Route exact path='/product' element={<Product />} />
+          <Route exact path='/category' element={<Category />} />
+          <Route exact path='/edit-category' element={<EditCategory />} />
+          <Route exact path='/edit-product' element={<EditProduct />} />
+          <Route exact path='/complain-message' element={<ComplainMassage />} />
+          <Route exact path='/detail-product' element={<DetailProduct />} />
+          <Route exact path='/checkout' element={<CheckOut />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 

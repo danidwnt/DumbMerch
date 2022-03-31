@@ -14,6 +14,7 @@ import EditCategory from './pages/EditCategory';
 import EditProduct from './pages/EditProduct';
 import ComplainMassage from './pages/ComplainMassage';
 import DetailProduct from './pages/DetailProduct';
+import CheckOut from './pages/CheckOut';
 
 
 
@@ -32,7 +33,8 @@ function App() {
                     <Route exact path='/edit-category' element={<EditCategory/>}/>
                     <Route exact path='/edit-product' element={<EditProduct/>}/>
                     <Route exact path='/complain-message' element={<ComplainMassage/>}/>
-                    <Route exact path='/detail-product' element={<DetailProduct/>}/>             
+                    <Route exact path='/detail-product' element={<DetailProduct/>}/>
+                    <Route exact path='/checkout' element={<CheckOut/>}/>             
             </Routes>
       </Router>
   );

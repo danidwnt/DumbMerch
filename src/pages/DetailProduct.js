@@ -1,6 +1,8 @@
 import React from 'react'
 import { Button, Container } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import NavbarUser from '../components/NavbarUser'
+
 
 const DetailProduct = () => {
     return (
@@ -27,7 +29,15 @@ const DetailProduct = () => {
 
                         <h3 className='harga'>RP. 300.900</h3>
 
-                        <Button style={{ backgroundColor: '#F74D4D', border: 'none', marginBottom: '50px' }} className='btn-beli'>Buy</Button>
+                        <Link to = '/checkout'>
+                        <Button style={{ 
+                            backgroundColor: '#F74D4D', 
+                            border: 'none', 
+                            marginBottom: '50px' 
+                            }} className='btn-beli'
+                            > Buy 
+                        </Button>
+                        </Link>
                     </div>
 
                 </div>

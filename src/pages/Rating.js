@@ -34,7 +34,7 @@ function Rating() {
 
     <NavbarUser/>
     <div style={styles.container}>
-      <h2 className="py-5 text-white"> Ratings Product </h2>
+      <h2 className="py-5 text-danger"> Ratings Product </h2>
       <div style={styles.stars}>
         {stars.map((_, index) => {
           return (

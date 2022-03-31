@@ -8,7 +8,7 @@ body {
 .border-form-login {
     margin-top: 100px;
     margin-left: 150px;
-    border-radius: 5px;
+    border-radius: 8px;
     width: 416px;
     padding: 35px;
     color: #FFFFFF;
@@ -19,12 +19,12 @@ body {
 .border-form-register {
     margin-top: 100px;
     margin-left: 150px;
-    border-radius: 5px;
+    border-radius: 8px;
     width: 416px;
     padding: 35px;
     color: #FFFFFF;
     background: #181818;
-    height: 420px;
+    height: 440px;
 }
 
 .layout-side {
@@ -68,9 +68,283 @@ body {
     color: #FFFFFF;
     margin-right: 30px;
     font-size: 18px;
+    font-weight: 600;
 }
 
 .btn-group-index .btn-register {
     color: #FFFFFF;
     padding-top: 5px;
+}
+
+/* page Login and Register */
+
+.side-left-nav {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 50px;
+    top: 28px;
+}
+
+/* navbar user */
+
+.header-content {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 33px;
+    color: #F74D4D;
+    margin-bottom: 30px;
+}
+
+.photo-profile {
+    height: 400px;
+    width: 338px;
+}
+
+.biodata {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.biodata h4 {
+    color: #F74D4D;
+}
+.biodata p {
+    width: 300px;
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+.profile-right {
+    margin-left: 0px;
+}
+
+.profile-right .container-mytransaction {
+    display: flex;
+    border-radius: 5px;
+    height: 160px;
+    width: 514px;
+    background: #303030;
+
+}
+
+.profile-right h3 {
+    color: #F74D4D;
+    margin-bottom: 30px;
+}
+
+.profile-right .container-mytransaction img {
+    width: 80px;
+    height: 120px;
+    margin: 20px 10px 15px 20px;
+}
+
+.profile-right .container-mytransaction .detail-transcation {
+    margin: 15px 20px 0px 20px;
+}
+
+.profile-right .container-mytransaction .detail-transcation p {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.profile-right .container-mytransaction .detail-transcation h4 {
+    color: #F74D4D;
+    font-size: 20px;
+}
+
+.profile-right .container-mytransaction .detail-transcation h5 {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.profile-right .container-mytransaction .img-mytans2 {
+    margin-left: 100px;
+    margin-top:  -10px;
+}
+
+.profile-right .container-mytransaction .img-mytans2 img {
+    width: 70px;
+    height: 70px;
+    display: block;
+}
+
+.profile-right .container-mytransaction .img-mytans2 .btn-rating{
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 4px 30px;
+}
+
+/* profile */
+
+.complain-left {
+    display: flex;
+    
+}
+
+.complain-left img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50px;
+    top: 174px;
+}
+
+.complain-left h6 {
+    position: absolute;
+    width: 42px;
+    height: 19px;
+    left: 121px;
+    top: 176px;
+    
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    
+    color: #FFFFFF;
+}
+
+.complain-left p {
+    position: absolute;
+    width: 200px;
+    height: 19px;
+    left: 121px;
+    top: 202px;
+
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: #ABABAB;
+}
+
+.side-right-complain {
+    margin-top: 55vh;
+    margin-left: 20px;
+    
+}
+
+.side-right-complain input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    background: #303030;
+    color: white;
+}
+
+.cht-user  {
+    flex: 50%;
+}
+
+.cht-admin {
+    flex: 50%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.cht-admin p {
+    margin-top: 10px;
+    margin-left: 30px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background: #575757;
+    padding: 5px 10px;
+}
+
+.cht-admin img {
+    width: 50px;
+    height: 50px;
+}
+
+.cht-user {
+    margin-top: -50px;
+    margin-left: 150px;
+}
+
+.cht-user p {
+    border: 1px solid white;
+    border-radius: 4px;
+    background: #575757;
+    padding: 5px 0px 5px 15px;
+    width: 70%;
+}
+
+/* page compline */
+
+.content-detail-product {
+    display: flex;
+    position: absolute;
+    width: 1035px;
+    height: 555px;
+    left: 195px;
+    top: 172px;
+}
+
+.content-detail-product img {
+    margin-right: 40px;
+    width: 436px;
+    height: 555px;
+    left: 195px;
+    top: 172px;
+}
+
+.side-right-product h1 {
+
+    width: 152px;
+    height: 66px;
+    left: 685px;
+    top: 205px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 66px;
+    /* identical to box height */
+
+
+    color: #F74D4D;
+}
+
+.side-right-product {
+    width: 544px;
+    height: 325px;
+    left: 685px;
+    top: 334px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+
+    color: #FFFFFF;
+}
+
+.harga {
+
+    font-weight: 900;
+    margin-top: 40px;
+    margin-left: 330px;
+    color: #F74D4D;
+}
+
+.btn-beli {
+    width: 544px;
+    height: 40px;
+    left: 685px;
+    top: 765px;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 18px;
 }
